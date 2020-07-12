@@ -10,4 +10,9 @@ class Property extends Model
     {
         return $this->belongsToMany('App\Models\Product');
     }
+
+    public function propertyValues()
+    {
+        return $this->hasMany('App\Models\PropertyValue');
+    }
 }

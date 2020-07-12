@@ -84,3 +84,16 @@
         Accept: application/json
         Authorization: Bearer <token>
     }
+    
+#    
+##### Получение свойств
+Запрос:
+    
+    GET http://<server>/api/properties
+
+Параметры:
+    
+    header: {
+        Accept: application/json
+        Authorization: Bearer <token>
+    }
