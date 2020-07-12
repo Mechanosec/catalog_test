@@ -1,0 +1,160 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700italic);* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #1abc9c;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+header {
+  text-align: justify;
+  height: 7em;
+  padding: 2em 5%;
+  background: #2c3e50;
+  color: #fff;
+}
+
+header::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+
+header > div,
+header > div::before,
+header nav,
+header > div h1 {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}
+
+header > div {
+  height: 100%;
+}
+
+header > div::before {
+  content: "";
+  height: 100%;
+}
+
+header > div h1 {
+  font-size: 3em;
+  font-style: italic;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top: -35px;
+}
+
+header nav a {
+  display: flex;
+  padding: 0 0.6em;
+  white-space: nowrap;
+  color: inherit;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  color: #1abc9c;
+}
+
+header nav a:last-child {
+  padding-right: 0;
+}
+
+@media screen and (max-width: 720px) {
+  header {
+    height: auto;
+  }
+
+  header > div,
+  header > div h1,
+  header nav {
+    height: auto;
+    width: auto;
+    display: block;
+    text-align: right;
+  }
+}
+
+footer {
+  background: #2c3e50;
+  color: white;
+  padding: 10px 0;
+}
+
+footer h5 {
+  text-align: center;
+}
+
+.starter-template {
+  padding: 20px 15px;
+  text-align: center;
+}
+
+table {
+  text-align: left;
+}
+
+div.thumbnail img {
+  max-height: 200px;
+}
+
+div.form-inline form {
+  display: inline;
+}
+
+div.labels {
+  position: absolute;
+}
+
+div.labels span.badge {
+  display: block;
+}
+
+span.badge.badge-success {
+  color: #fff;
+  background-color: #28a745;
+}
+
+span.badge.badge-warning {
+  color: #fff;
+  background-color: #dc3545;
+}
+
+span.badge.badge-danger {
+  color: #212529;
+  background-color: #ffc107;
+}
+
+div.filters {
+  padding-bottom: 5px;
+}
+
+#paginate {
+  display: flex;
+  justify-content: center;
+}
+
+#sortable {
+  display: flex;
+  justify-content: center;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 5px;
+  background: white;
+}
+
